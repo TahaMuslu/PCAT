@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(methodOverride("_method", { methods: ["POST", "GET"] }));
 
 //ROUTES
-app.get("/", photoControllers.getAllPhotoso);
+app.get("/", photoControllers.getAllPhotos);
 app.get("/photos/:id", photoControllers.getPhoto);
 app.post("/photos", photoControllers.createPhoto);
 app.put("/photos/:id", photoControllers.updatePhoto);
