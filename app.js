@@ -31,7 +31,7 @@ app.put("/photos/:id", photoControllers.updatePhoto);
 app.delete("/photos/:id", photoControllers.deletePhoto);
 
 app.get("/about", pageControllers.getAboutPage);
-app.get("/add_photo", pageControllers.getAddPage);
+app.get("/add", pageControllers.getAddPage);
 app.get("/photos/edit/:id", pageControllers.getEditPage);
 
 const port = process.env.PORT || 5000;
