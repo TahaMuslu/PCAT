@@ -8,6 +8,7 @@ const photoControllers = require("./controllers/photoControllers");
 
 const app = express();
 
+
 //CONNECT DB
 mongoose.connect(
     "mongodb+srv://tahamuslu:ibeenamelesi1221@cluster0.mdgbd28.mongodb.net/?retryWrites=true&w=majority"
