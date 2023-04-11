@@ -22,7 +22,7 @@ exports.getAllPhotos = async (req, res) => {
         current: page,
         pages: Math.ceil(totalPhotos / photosPerPage)
     });
-}
+};
 
 
 exports.getPhoto = async (req, res) => {
@@ -30,7 +30,7 @@ exports.getPhoto = async (req, res) => {
     res.render('photo', {
         photo
     });
-}
+};
 
 
 exports.createPhoto = async (req, res) => {
@@ -51,7 +51,7 @@ exports.createPhoto = async (req, res) => {
         });
         res.redirect('/');
     });
-}
+};
 
 exports.updatePhoto = async (req, res) => {
 
@@ -61,7 +61,7 @@ exports.updatePhoto = async (req, res) => {
     photo.save();
     res.redirect(`/photos/${req.params.id}`);
 
-}
+};
 
 
 exports.deletePhoto = async (req, res) => {
@@ -73,4 +73,4 @@ exports.deletePhoto = async (req, res) => {
 
     res.redirect(`/`);
 
-}
+};
